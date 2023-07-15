@@ -1,0 +1,37 @@
+<!--my.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 马上登录 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 马上登录 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="userinfo">
+    <block wx:if="{{!userInfo.nickName}}">
+      <button  bindtap="navigatorto" data-num="0"> 马上登录 </button>
+    </block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.headPic}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="userinfo">
+  <view class="onelist flex" bindtap="navigatorto" data-num="1">
+    <image src="/images/info.png" class="icon"></image><view class="flexs">个人信息</view><image src="/images/to.png" class="to"></image>
+  </view>
+  <!-- <view class="onelist flex" bindtap="navigatorto" data-num="2">
+    <image src="/images/testlist.png" class="icon"></image><view class="flexs">考试记录</view><image src="/images/to.png" class="to"></image>
+  </view> -->
+</view> 

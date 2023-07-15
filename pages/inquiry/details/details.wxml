@@ -1,0 +1,10 @@
+<!--pages/inquiry/details/details.wxml-->
+<view class="flex c_txt">
+  <view>姓名：</view>
+  <view>{{details.userName}}</view>
+</view>
+<view class="flex c_txt">
+  <view>证书编号：</view>
+  <view>{{details.certificateSn}}</view>
+</view>
+<image src="{{details.certificatePath}}" mode="" mode="widthFix" class="cImg"/>

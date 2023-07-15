@@ -1,0 +1,15 @@
+/* pages/inquiry/details/details.wxss */
+page{
+  width: 750rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.c_txt{
+  line-height: 60rpx;
+  justify-content: flex-start;
+}
+.cImg{
+  width: 690rpx;
+  margin: 30rpx auto;
+  display: block;
+}

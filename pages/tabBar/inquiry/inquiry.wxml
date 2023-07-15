@@ -1,0 +1,13 @@
+<!--pages/inquiry/inquiry.wxml-->
+<image src="/images/logo.jpg" mode="" class="logo"/>
+<view class="box">
+  <view class="inputbox flex">
+    <view class="c_txt">姓名</view>
+    <input type="text" bindinput="iptval" data-num="1" placeholder="证明书上的姓名" placeholder-style="font-weight: normal;"></input>
+  </view>
+  <view class="inputbox flex">
+    <view class="c_txt">证书编号</view>
+    <input type="text" bindinput="iptval" data-num="2" placeholder="证明书编号" placeholder-style="font-weight: normal;"></input>
+  </view>
+  <view class="savebtn" bindtap="search">查询</view>
+</view>

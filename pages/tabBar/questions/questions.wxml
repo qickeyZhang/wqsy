@@ -1,0 +1,32 @@
+<!--pages/questions/questions.wxml-->
+<scroll-view scroll-x='true' class="scroll">
+  <view class="four flex">
+    <view wx:for="{{typelist}}" wx:key="index" class="one {{headIndex == index ? 'act' : ''}}" bindtap="choosehead" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+<view class="nav flex">
+  <view class="navone flex" bindtap="todetails" data-num="1">
+    <image src="/images/shunxu.png" mode="" class="icon"/>
+    <view>顺序练习</view>
+  </view>
+  <view class="navone flex" bindtap="todetails" data-num="2">
+    <image src="/images/beiti.png" mode="" class="icon"/>
+    <view>背题模式</view>
+  </view>
+  <view class="navone flex" bindtap="todetails" data-num="3">
+    <image src="/images/suiji.png" mode="" class="icon"/>
+    <view>随机练习</view>
+  </view>
+  <view class="navone flex">
+    <image src="/images/tixing.png" mode="" class="icon"/>
+    <view>题型练习</view>
+  </view>
+  <view class="navone flex" bindtap="todetails" data-num="4">
+    <image src="/images/cuoti.png" mode="" class="icon"/>
+    <view>错题集</view>
+  </view>
+  <view class="navone flex">
+    <image src="/images/kaoshi.png" mode="" class="icon"/>
+    <view>正式考试</view>
+  </view>
+</view>

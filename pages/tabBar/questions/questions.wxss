@@ -1,0 +1,48 @@
+/* pages/questions/questions.wxss */
+page{
+  background: #F6F6FA;
+}
+.scroll{
+  width: 750rpx;
+  height: 100rpx;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.scroll .four{
+  font-size: 30rpx;
+  color: #929B9C;
+  width: max-content;
+  height: 100rpx;
+}
+.scroll .four .one{
+  position: relative;
+  line-height: 100rpx;
+  padding: 0 26rpx;
+}
+.scroll .four .act{
+  color: #ecdc6d;
+  font-weight: bold;
+  font-size: 36rpx;
+}
+.nav{
+  padding: 130rpx 30rpx 30rpx;
+  flex-wrap: wrap;
+}
+.navone{
+  width: 330rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  justify-content: center;
+  background: white;
+  font-size: 32rpx;
+}
+.navone .icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;  
+}

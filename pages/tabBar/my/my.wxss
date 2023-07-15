@@ -1,0 +1,45 @@
+/**my.wxss**/
+page{
+  background: #F6F6FA;
+}
+.container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ecdc6d;
+  margin-bottom: 10rpx;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.onelist{
+  width: 750rpx !important;
+  height: 104rpx;
+  color: #16191D;
+  font-size: 26rpx;
+  box-sizing: border-box;
+  background: white;
+  padding: 0 30rpx;
+}
+.onelist .icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+.onelist .to{
+  width: 10rpx;
+  height: 15rpx;
+}

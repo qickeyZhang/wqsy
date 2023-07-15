@@ -1,0 +1,41 @@
+<!--pages/information/information.wxml-->
+<view class="swiperbox" wx:if="{{newbanner.length > 0}}">
+  <view class="bannerbox">
+		<swiper circular bindchange='bannerswiperChange' interval='2000' class="bannerbox">
+			<block wx:for="{{newbanner}}" wx:key="index">
+				<swiper-item>
+					<view class="flex">
+						<image src="{{item.picUrl}}" bindtap="bannerto" data-item="{{item}}" mode="aspectFill"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="flex dots" wx:if="{{newbanner.length > 1}}">
+		<view class="{{swiperIndex == index ? 'swiperactive' : ''}}" wx:for="{{newbanner}}" wx:key='index'></view>
+	</view>
+</view>
+<view class="scroll" wx:if="{{xiding}}"></view>
+<scroll-view scroll-x='true' class="scroll {{xiding ? 'ding' : ''}}">
+  <view class="four flex">
+    <view wx:for="{{acttype}}" wx:key="index" class="one {{actIndex == index ? 'act' : ''}}" bindtap="choosetype" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+<view class="articles">
+  <navigator url="/pages/information/article/article?id={{item.id}}" hover-class="none" class="actlist" wx:for="{{actlist}}" wx:key='index'>
+    <image wx:if="{{item.cover}}" src="{{item.cover}}" class="banner" mode="aspectFill"></image>
+    <view class="con">
+      <view class="title flex">
+        <view class="ellipse">{{item.title}}</view>
+      </view>
+      <view class="flex">
+        <view class="flexs">{{item.createTime}}</view>
+        <view class="txt">{{item.viewNum }}人浏览</view>
+      </view>
+    </view>
+  </navigator>
+  <view class="nolist" wx:if="{{nolist}}">
+    <image src="/images/nolist.png"></image>
+    <view>暂无相关数据</view>
+  </view>
+</view>

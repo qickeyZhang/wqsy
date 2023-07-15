@@ -2,6 +2,49 @@
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "projectname": "%E4%B8%87%E5%8D%83%E9%97%AA%E8%80%80",
   "setting": {
-    "compileHotReLoad": true
-  }
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "答题考试",
+          "pathName": "pages/tabBar/questions/questions",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "题目详情",
+          "pathName": "pages/questions/details/details",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/tabBar/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "证书详情",
+          "pathName": "pages/inquiry/details/details",
+          "query": "id=1383916537266176",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.22.1"
 }

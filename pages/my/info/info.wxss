@@ -1,0 +1,27 @@
+/* pages/my/info/info.wxss */
+@import '/pages/tabBar/my/my.wxss';
+.onelist .flexs{
+  text-align: left;
+}
+.onelist .tx{
+  width: 78rpx;
+  height: 78rpx;
+  border-radius: 50%;
+  margin-right: 22rpx;
+}
+input{
+  color: #252525;
+  margin-right: 28rpx;
+  text-align: right;
+}
+.savebtn{
+  width: 610rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  border-radius: 82rpx;
+  background: #ecdc6d;
+  text-align: center;
+  margin: 114rpx auto;
+  font-size: 28rpx;
+  color: white;
+}

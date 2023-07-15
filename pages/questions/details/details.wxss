@@ -1,0 +1,114 @@
+/* pages/questions/details/details.wxss */
+page{
+  font-size: 36rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+.swiperbox{
+  width: 750rpx;
+  box-sizing: border-box;
+}
+.queshead{
+  line-height: 60rpx;
+  margin: 30rpx 0 60rpx;
+  padding: 0 30rpx;
+}
+.queshead .text{
+  display: inline-block;
+  padding: 0 10rpx;
+  background: #ecdc6d;
+  color: white;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  line-height: 40rpx;
+  position: relative;
+  top: -4rpx;
+}
+.select{
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.select .labelone{
+  justify-content: flex-start;
+  margin-bottom: 30rpx;
+  min-height: 120rpx;
+}
+.select .labelone .letter{
+  width: 66rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  color: #ecdc6d;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 20rpx #ecdc6d;
+}
+.answer{
+  font-weight: bold;
+  justify-content: flex-start;
+  padding: 60rpx 30rpx 150rpx;
+}
+.answer .self{
+  margin-left: 80rpx;
+}
+.answer text{
+  color: #ecdc6d;
+}
+.highzindex{
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  z-index: 1;
+  background: white;
+}
+.foot{
+  height: 120rpx;
+  justify-content: flex-end;
+  font-size: 26rpx;
+  border-top: 1rpx solid #ccc;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.foot image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10rpx 0 30rpx;
+}
+.mask{
+  
+}
+.allques{
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 750rpx;
+  height: 800rpx;
+  box-sizing: border-box;
+  overflow: scroll;
+  padding: 0 15rpx;
+}
+.allques view{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 10rpx;
+  border: 1rpx solid #e8e8e8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #a3a3a3;
+}
+.allques .doing{
+  border-color: #ecdc6d;
+  box-shadow: 0 0 20rpx #ecdc6d;
+}
+.allques .correct{
+  background: rgba(255, 129, 136, .1);
+  color: #ff8188;
+  border: none;
+}
+.allques .wrong{
+  background: rgba(2, 198, 125, .1);
+  color: #02c67d;
+  border: none;
+}

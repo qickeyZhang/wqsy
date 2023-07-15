@@ -1,0 +1,48 @@
+/* pages/inquiry/inquiry.wxss */
+.logo{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+  margin: 100rpx auto 80rpx;
+  display: block;
+}
+.box{
+  width: 690rpx;
+  box-shadow: 0 0 20rpx #ecdc6d;
+  border-radius: 40rpx;
+  margin-left: 30rpx;
+  background: white;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+}
+.inputbox{
+  line-height: 80rpx;
+  border-radius: 12rpx;
+  background: #EEEFEE;
+  margin-bottom: 40rpx;
+  padding: 0 20rpx;
+}
+.inputbox .c_txt{
+  color: #7F7F7F;
+}
+.inputbox input{
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0 10rpx;
+  color: #333333;
+  margin-left: 30rpx;
+  text-align: right;
+  font-weight: bold;
+}
+.savebtn{
+  width: 480rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 12rpx;
+  background: #ecdc6d;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: white;
+}

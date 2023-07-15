@@ -1,13 +1,74 @@
 {
-  "pages":[
-    "pages/index/index",
+  "pages": [
+    "pages/tabBar/information/information",
+    "pages/tabBar/questions/questions",
+    "pages/tabBar/inquiry/inquiry",
+    "pages/tabBar/my/my",
+    "pages/login/login",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "subpackages": [
+    {
+      "root": "pages/information",
+      "name": "资讯",
+      "pages": [
+        "article/article"
+      ]
+    },
+    {
+      "root": "pages/questions",
+      "name": "题库考试",
+      "pages": [
+        "index/index",
+        "details/details"
+      ]
+    },
+    {
+      "root": "pages/inquiry",
+      "name": "证书查询",
+      "pages": [
+        "details/details"
+      ]
+    },
+    {
+      "root": "pages/my",
+      "name": "我的",
+      "pages": [
+        "info/info"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "万千闪耀",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#ecdc6d",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/information/information",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/tabBar/inquiry/inquiry",
+        "text": "证书查询",
+        "iconPath": "/images/inquiry.png",
+        "selectedIconPath": "/images/inquiry_active.png"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "text": "我的",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user_active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

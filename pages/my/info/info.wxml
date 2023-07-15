@@ -1,0 +1,12 @@
+<!--pages/my/info/info.wxml-->
+<button open-type="chooseAvatar" hover-class="none" class="onelist flex" bindchooseavatar='chooseavatar'>
+  <view class="flexs">头像</view>
+  <image src="{{info.headPic}}" class="tx"></image>
+  <image src="/images/to.png" class="to"></image>
+</button>
+<view class="onelist flex">
+  <view class="flexs">昵称</view>
+  <input type="nickname" bind:change="ncval" bindinput="ncval" value="{{info.nickName}}"/>
+  <image src="/images/to.png" class="to"></image>
+</view>
+<view class="savebtn" bindtap="uploadinfo">确定</view>
