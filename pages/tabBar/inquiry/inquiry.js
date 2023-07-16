@@ -40,9 +40,20 @@ Page({
       userName: this.data.c_name,
       certificateSn: this.data.c_num
     }).then(res => {
-      wx.navigateTo({
-        url: '/pages/inquiry/details/details?id=' + res.data.data.id,
-      })
+      if(res.data.code == 200){
+        if(res.data.data){
+          wx.navigateTo({
+            url: '/pages/inquiry/details/details?id=' + res.data.data.id,
+          })
+        } else {
+          wx.showToast({
+            title: '暂无相关证书',
+            icon: 'none',
+            mask: true 
+          })
+        }
+        
+      }
     })
   },
 

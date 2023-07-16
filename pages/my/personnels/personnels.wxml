@@ -1,0 +1,9 @@
+<!--pages/my/personnels/personnels.wxml-->
+<view class="bigbox" wx:for="{{allLists}}" wx:key="index">
+  
+  <view class="list" wx:for="{{item.list}}" wx:for-item="items" wx:for-index="indexs" wx:key="indexs">
+      <view class="p_name">{{items.name}}<text class="t_name">{{item.typename}}</text></view>
+      <view class="p_txt">{{items.txt}}</view>
+      <image wx:for="{{items.imglist}}" wx:for-item="itemss" wx:for-index="indexss" wx:key="indexss" src="{{itemss}}" mode="widthFix"/>
+  </view>
+</view>

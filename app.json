@@ -19,7 +19,6 @@
       "root": "pages/questions",
       "name": "题库考试",
       "pages": [
-        "index/index",
         "details/details"
       ]
     },
@@ -34,7 +33,8 @@
       "root": "pages/my",
       "name": "我的",
       "pages": [
-        "info/info"
+        "info/info",
+        "personnels/personnels"
       ]
     }
   ],

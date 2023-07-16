@@ -3,8 +3,8 @@
 <view class="h2">万千闪耀</view>
 <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信一键登录</button>
 <view class="nologin" bindtap="back">暂不登录</view>
-<view class="agreement flex" bindtap="togglecheck">
+<!-- <view class="agreement flex" bindtap="togglecheck">
   <image src="/images/correct.png" wx:if="{{ischeck}}"></image>
   <image src="/images/wrong.png" wx:else></image>
   <view>已阅读并同意<text catchtap="toagree">用户协议、隐私政策</text></view>
-</view>
+</view> -->

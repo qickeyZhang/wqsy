@@ -10,6 +10,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    baseUrl: 'http://62.234.17.167:8080'
   }
 })

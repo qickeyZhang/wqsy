@@ -31,7 +31,10 @@
   <view class="onelist flex" bindtap="navigatorto" data-num="1">
     <image src="/images/info.png" class="icon"></image><view class="flexs">个人信息</view><image src="/images/to.png" class="to"></image>
   </view>
-  <!-- <view class="onelist flex" bindtap="navigatorto" data-num="2">
+  <view class="onelist flex" bindtap="navigatorto" data-num="2">
+    <image src="/images/testlist.png" class="icon"></image><view class="flexs">组织架构</view><image src="/images/to.png" class="to"></image>
+  </view>
+  <!-- <view class="onelist flex" bindtap="navigatorto" data-num="3">
     <image src="/images/testlist.png" class="icon"></image><view class="flexs">考试记录</view><image src="/images/to.png" class="to"></image>
   </view> -->
 </view> 

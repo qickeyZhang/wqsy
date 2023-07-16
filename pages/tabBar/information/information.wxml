@@ -1,7 +1,7 @@
 <!--pages/information/information.wxml-->
 <view class="swiperbox" wx:if="{{newbanner.length > 0}}">
   <view class="bannerbox">
-		<swiper circular bindchange='bannerswiperChange' interval='2000' class="bannerbox">
+		<swiper circular autoplay bindchange='bannerswiperChange' interval='2000' class="bannerbox">
 			<block wx:for="{{newbanner}}" wx:key="index">
 				<swiper-item>
 					<view class="flex">

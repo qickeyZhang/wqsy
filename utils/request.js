@@ -1,13 +1,10 @@
 import md5 from '../lib/md5.js'
 
-// let baseUrl = 'https://wx.boluoyunyu.com'
-let baseUrl = 'http://62.234.17.167:8080'
+let app = getApp()
+let baseUrl = app.globalData.baseUrl
 
 function request(url, data = {}, method) {
   let header = { 'content-type': 'application/json'}
-  if (method == 'POST') {
-    header['content-type'] = "application/x-www-form-urlencoded"
-  }
   header['authorization'] = "Bearer " + wx.getStorageSync('token')
 
 

@@ -42,6 +42,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "成员列表",
+          "pathName": "pages/my/personnels/personnels",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,39 @@
+/* pages/my/personnels/personnels.wxss */
+page{
+    padding-bottom: 60rpx;
+}
+.bigbox{
+    width: 750rpx;
+    background: white;
+    overflow: hidden;
+}
+.list{
+    width: 690rpx;
+    border-bottom: 1rpx solid #ecdc6d;
+    box-sizing: border-box;
+    margin: 0 30rpx;
+    overflow: hidden;
+}
+.list .p_name{
+    font-size: 36rpx;
+    font-weight: bold;
+    line-height: 90rpx;
+}
+
+.list .t_name{
+    font-weight: normal;
+    font-size: 30rpx;
+    color: #ecdc6d;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.list .p_txt{
+    font-size: 26rpx;
+    color: #55514C;
+    margin-bottom: 20rpx;
+}
+.list image{
+    width: 600rpx;
+    margin: 0 auto 20rpx;
+    display: block;
+}
