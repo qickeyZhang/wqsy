@@ -32,7 +32,7 @@
         <view class="ellipse">{{item.title}}</view>
       </view>
       <view class="flex">
-        <view class="flexs">{{item.createTime}}</view>
+        <view class="flexs">{{item.releaseTime}}</view>
         <view class="txt">{{item.viewNum }}人浏览</view>
       </view>
     </view>

@@ -2,7 +2,7 @@
 <view class="article">
 	<view class="articletitle">{{articleData.title}}</view>
 	<view class="timeyd flex">
-		<view>{{articleData.createTime}}</view>
+		<view>{{articleData.releaseTime}}</view>
 		<view>{{articleData.viewNum}}人阅读</view>
   </view>
 	<view class="richtext">
