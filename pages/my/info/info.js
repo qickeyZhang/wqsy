@@ -66,7 +66,7 @@ Page({
           title: '更新成功',
           mask: true
         })
-        this.getinfo()
+        setTimeout(() => {this.getinfo()}, 2000)
       }
     })
   },

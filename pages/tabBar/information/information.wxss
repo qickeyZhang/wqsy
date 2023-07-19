@@ -2,11 +2,21 @@
 page{
   padding-top: 30rpx;
 }
+.header{
+  margin-bottom: 50rpx;
+}
+.header image{
+  width: 750rpx;
+}
 .bannerbox{
   position: relative;
   width: 690rpx;
   height: 350rpx;
   margin: 0 auto 26rpx;
+}
+.bannerbox .imgbox{
+  background: rgba(236, 220, 109, .2);
+  border-radius: 15rpx;
 }
 .bannerbox image{
   width: 690rpx;

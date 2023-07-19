@@ -1,54 +1,34 @@
 // pages/my/personnels/personnels.js
+import ajax from '../../../utils/request'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    allLists: [
-      {
-        typename: '顾问',
-        list: [
-          {
-            name: '史光柱',
-            txt: '大校军衔，被评为新中国成立以来100位感动中国人物，中央军委授予“战斗英雄”称号。先后荣立过一等功一次、二等功两次、三等功两次。',
-            imglist: [
-              'http://question-shop.oss-cn-beijing.aliyuncs.com/common/headimg_default.jpg',
-              'http://question-shop.oss-cn-beijing.aliyuncs.com/common/headimg_default.jpg'
-            ]
-          },
-          {
-            name: '胡国桥',
-            txt: '大校军衔。一等功臣，北京军区“优秀共产党员”“全国拥政爱民先进个人”“全国优秀军训工作者”“全军装备理论研究先进个人”。',
-            imglist: [
-              'http://question-shop.oss-cn-beijing.aliyuncs.com/common/headimg_default.jpg',
-            ]
-          }
-        ]
-      },
-      {
-        typename: '主任',
-        list: [
-          {
-            name: '张茂忠',
-            txt: '中央军委授予“战斗英雄”荣誉称号，一等功臣。',
-            imglist: []
-          },
-          {
-            name: '张茂忠',
-            txt: '中央军委授予“战斗英雄”荣誉称号，一等功臣。',
-            imglist: []
-          }
-        ]
+    allLists: []
+  },
+
+  // 获取列表
+  getlist(){
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
+    ajax.get('/leader/leader/list').then(res => {
+      wx.hideLoading()
+      if(res.data.code == 200){
+        this.setData({allLists: res.data.rows})
       }
-    ]
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getlist()
   },
 
   /**

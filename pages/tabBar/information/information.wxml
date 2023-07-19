@@ -1,10 +1,13 @@
 <!--pages/information/information.wxml-->
+<view class="header">
+  <image src="/images/actlogo.png" mode="widthFix"/>
+</view>
 <view class="swiperbox" wx:if="{{newbanner.length > 0}}">
   <view class="bannerbox">
 		<swiper circular autoplay bindchange='bannerswiperChange' interval='2000' class="bannerbox">
 			<block wx:for="{{newbanner}}" wx:key="index">
 				<swiper-item>
-					<view class="flex">
+					<view class="flex imgbox">
 						<image src="{{item.picUrl}}" bindtap="bannerto" data-item="{{item}}" mode="aspectFill"></image>
 					</view>
 				</swiper-item>
