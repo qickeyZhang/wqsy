@@ -10,6 +10,6 @@ App({
     })
   },
   globalData: {
-    baseUrl: 'http://62.234.17.167:8080'
+    baseUrl: 'https://vip.china-cac.cn'
   }
 })

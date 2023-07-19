@@ -26,7 +26,7 @@ Page({
     wx.uploadFile({
       filePath: img, 
       name: 'file',
-      url: 'http://62.234.17.167:8080/api/common/upload',
+      url: 'https://vip.china-cac.cn/api/common/upload',
       success:function(res){
         let resdata = JSON.parse(res.data)
         if(resdata.code == 200){

@@ -16,7 +16,7 @@ Page({
       title: '数据加载中...',
       mask: true
     })
-    ajax.get('/leader/leader/list').then(res => {
+    ajax.get('/api/leader/leader/list').then(res => {
       wx.hideLoading()
       if(res.data.code == 200){
         this.setData({allLists: res.data.rows})
