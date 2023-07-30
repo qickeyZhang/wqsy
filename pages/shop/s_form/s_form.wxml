@@ -1,0 +1,30 @@
+<!--pages/shop/s_form/s_form.wxml-->
+<view class="whitebox">
+  <view class="line flex">
+    <view class="lefttxt">购买商品</view>
+    <picker bindchange="bindGoodsChange" range="{{goodsregion}}" value="{{goodsIndex}}" style="width: 540rpx;">
+      <input placeholder-class="place" type="text" placeholder="请选择" disabled value="{{goodsInfo.goodsName}}"/>
+    </picker>
+    <image src="/images/to.png" class="to"></image>
+  </view>
+  <view class="line flex">
+    <view class="lefttxt">收货人</view>
+    <input placeholder-class="place" type="text" placeholder="请输入" bindinput="inputval" data-num="1" value="{{addressee}}"/>
+  </view>
+  <view class="line flex">
+    <view class="lefttxt">手机号</view>
+    <input placeholder-class="place" type="number" placeholder="请输入" bindinput="inputval" data-num="2" value="{{phonenum}}"/>
+  </view>
+  <view class="line flex">
+    <view class="lefttxt">所在地区</view>
+    <picker mode="region" bindchange="bindRegionChange" style="width: 540rpx;">
+      <input placeholder-class="place" type="text" placeholder="请选择" disabled value="{{area}}"/>
+    </picker>
+    <image src="/images/to.png" class="to"></image>
+  </view>
+  <view class="line flex">
+    <view class="lefttxt">详细地址</view>
+    <input placeholder-class="place" type="text" placeholder="请输入" bindinput="inputval" data-num="3" value="{{address}}"/>
+  </view>
+</view>
+<view class="finallbtn" bindtap="save">提交</view>

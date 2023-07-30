@@ -1,0 +1,48 @@
+/* pages/shop/s_form/s_form.wxss */
+  page{
+    background: #F6F6FA;
+  }
+  .whitebox{
+    background: white;
+    padding: 0 30rpx;
+    width: 750rpx;
+    box-sizing: border-box;
+  }
+  .whitebox .line{
+    border-bottom: 1px solid #ECECEC;
+    justify-content: flex-start;
+    height: 105rpx;
+  }
+  .whitebox .line:last-child{
+    border: none;
+  }
+  .whitebox .lefttxt{
+    width: 150rpx;
+    color: #666666;
+    font-size: 26rpx;
+  }
+  .whitebox input{
+    font-size: 26rpx;
+    color: #16191D;
+    font-weight: bold;
+    flex: 1;
+  }
+  .whitebox .place{
+    color: #999999;
+    font-size: 22rpx;
+  }
+  .whitebox .to{
+    width: 10rpx;
+    height: 15rpx;
+  }
+  .finallbtn{
+    width: 690rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    background: linear-gradient(232deg, #FFB183 0%, #FF8298 100%);
+    border-radius: 84rpx;
+    text-align: center;
+    margin: 66rpx auto;
+    font-size: 26rpx;
+    color: white;
+  }

@@ -3,7 +3,7 @@
   "projectname": "%E4%B8%87%E5%8D%83%E9%97%AA%E8%80%80",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true
   },
   "condition": {
     "miniprogram": {
@@ -49,9 +49,16 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "表单",
+          "pathName": "pages/shop/s_form/s_form",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "libVersion": "2.22.1"
+  "libVersion": "2.33.0"
 }

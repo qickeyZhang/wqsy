@@ -30,6 +30,13 @@
       ]
     },
     {
+      "root": "pages/shop",
+      "name": "商城",
+      "pages": [
+        "s_form/s_form"
+      ]
+    },
+    {
       "root": "pages/my",
       "name": "我的",
       "pages": [
