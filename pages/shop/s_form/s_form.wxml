@@ -8,6 +8,10 @@
     <image src="/images/to.png" class="to"></image>
   </view>
   <view class="line flex">
+    <view class="lefttxt">数量</view>
+    <input placeholder-class="place" type="number" placeholder="请输入" bindinput="inputval" data-num="0" value="{{goodsnum}}"/>
+  </view>
+  <view class="line flex">
     <view class="lefttxt">收货人</view>
     <input placeholder-class="place" type="text" placeholder="请输入" bindinput="inputval" data-num="1" value="{{addressee}}"/>
   </view>

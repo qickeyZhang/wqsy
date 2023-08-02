@@ -10,6 +10,7 @@ Page({
     goodsInfo: {},
     goodsList: [],
     goodsregion: [],
+    goodsnum: 1,
     addressee: '',
     phonenum: '',
     area: '',
@@ -43,7 +44,7 @@ Page({
   // 收货人、手机号。详细地址
   inputval(e){
     var num = parseInt(e.currentTarget.dataset.num);
-    var datanam  = ''
+    var datanam  = 'goodsnum'
     switch (num) {
       case 1:
         datanam = 'addressee'
@@ -71,6 +72,13 @@ Page({
     if(!this.data.goodsInfo.id){
       wx.showToast({
         title: '请选择购买商品',
+        icon: 'none'
+      })
+      return
+    }
+    if(parseInt(this.data.goodsnum) < 1){
+      wx.showToast({
+        title: '请输入正确数量',
         icon: 'none'
       })
       return
@@ -117,6 +125,7 @@ Page({
       mask: true
     })
     ajax.post( '/api/shop/order',{
+      num: this.data.goodsnum,
       consignee: this.data.addressee,
       mobile: this.data.phonenum,
       address: this.data.area + ' ' + this.data.address,
