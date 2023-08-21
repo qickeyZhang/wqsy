@@ -4,8 +4,9 @@
 	<view class="timeyd flex">
 		<view>{{articleData.releaseTime}}</view>
 		<view>{{articleData.viewNum}}人阅读</view>
-  </view>
+	</view>
 	<view class="richtext">
-		<rich-text nodes="{{articleData.content}}"></rich-text>
+		<mp-html content="{{articleData.content}}" />
+		<!-- <rich-text nodes="{{articleData.content}}"></rich-text> -->
 	</view>
 </view>

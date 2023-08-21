@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-html": "/components/mp-weixin/index"
+  },
   "navigationBarTitleText": "详情"
 }
