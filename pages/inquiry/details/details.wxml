@@ -1,6 +1,6 @@
 <!--pages/inquiry/details/details.wxml-->
 <view class="flex c_txt">
-  <view>姓名：</view>
+  <view>{{details.data_type == 2 ? '机构名' : '姓名'}}：</view>
   <view>{{details.userName}}</view>
 </view>
 <view class="flex c_txt">

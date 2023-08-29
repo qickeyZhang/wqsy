@@ -24,9 +24,8 @@ Page({
       wx.setNavigationBarTitle({title: res.data.data.title})
       res.data.data.content = res.data.data.content ? res.data.data.content.replace(/<img /g, '<img style="width:100%"') : ''
       res.data.data.content = res.data.data.content ? res.data.data.content.replace(/<iframe /g, '<iframe style="width:100%" ') : ''
-      res.data.data.content = res.data.data.content ? res.data.data.content.replace(/iframe /g, 'video ') : ''
+      res.data.data.content = res.data.data.content ? res.data.data.content.replace(/iframe/g, 'video') : ''
       // desc = desc.replace(/<section/g, '<div').replace(/\/section>/g, '/div>')
-      // res.data.data.content = '<video style="width:100%" class="ql-video" frameborder="0" allowfullscreen="true" src="https://bslimage.oss-cn-beijing.aliyuncs.com/b0c2f3ff-a7dd-9742-85cb-a94cb05f6a21.mp4"></video><p><br></p><p><br></p><p><span style="color: rgba(0, 0, 0, 0.9);">2023年08月03日09：00，中国关心下一代工作委员会健康体育发展中心“万千闪耀”红色军体主题成果展示活动在国家奥林匹克中心主体育场隆重举行。</span></p><p><br></p>'
       this.setData({articleData: res.data.data})
     })
   },
